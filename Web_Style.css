@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: none;
+}
+
+.content{
+    background: url('imgs/1.png') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.left_wrap h1 {
+    color: #ffffff;
+    text-align: left;
+    font-size: 35px;
+    font-weight: normal;
+    font-family: Arial;
+}
+.left_wrap h2{
+    color: white;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Arial;
+}
+.left_button{
+    width: 170px;
+    height: 44px;
+    background-color: rgb(239, 62, 66) ;
+    position: absolute;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color ;
+}
+.left_button:hover{
+    background-color: yellowgreen;
+}
+
+.lf_button {
+    width: 170px;
+    height: 44px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    line-height: 44px;
+}
+
+.right_wrap input{
+    display: block;
+    width: 400px;
+    height: 25px;
+    border-radius: 2px;
+    border-color: white;
+}
+
+.right_wrap textarea{
+    display: block;
+    width: 400px;
+    height: 150px;
+    border-radius: 2px;
+    border-color: white;
+}
+
+.right_button{
+    width: 300px;
+    height: 44px;
+    background-color: rgb(239, 62, 66) ;
+    position: absolute;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color ;
+}
+.right_button:hover{
+    background-color: yellowgreen;
+}
+
+.rg_button {
+    width: 300px;
+    height: 44px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    line-height: 44px;
+}
+
+
+/*change content when screen size changes*/
+@media screen and (min-width: 1300px){
+    .content{
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+
+    .left_wrap{
+        width: 670px;
+        height: 200px;
+        position: absolute;
+        top: 80px;
+        left: 130px;
+    }
+
+    .right_wrap{
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        top: 80px;
+        left: 850px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1300px){
+    .content{
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+    .left_wrap{
+        width: 50%;
+        height: 600px;
+        position: absolute;
+        top: 80px;
+        left: 30px;
+    }
+
+    .right_wrap{
+        width: 50%;
+        height: 400px;
+        position: absolute;
+        top: 80px;
+        left: 55%;
+    }
+    .right_wrap input{
+        width: 70%;
+        height: 25px;
+    }
+    .right_wrap textarea{
+        width: 70%;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 700px) {
+
+    .content{
+        width: 100%;
+        height: 1000px;
+        position: relative;
+    }
+    .left_wrap{
+        width: 95%;
+        height: 600px;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+    }
+
+    .right_wrap{
+        width: 95%;
+        height: 400px;
+        margin-top: 420px;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+
+
+    }
+    .right_wrap input{
+        width: 90%;
+        height: 25px;
+    }
+    .right_wrap textarea{
+        width: 90%;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 345px) and (max-width: 380px) {
+    .content {
+        width: 100%;
+        height: 1000px;
+        position: relative;
+    }
+
+    .left_wrap {
+        width: 95%;
+        height: 600px;
+        position: absolute;
+        left: 20px;
+        top: 80px;
+    }
+
+    .right_wrap {
+        width: 95%;
+        height: 400px;
+        margin-top: 500px;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+
+    }
+    .right_wrap input {
+        width: 90%;
+        height: 25px;
+    }
+
+    .right_wrap textarea {
+        width: 90%;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 345px) {
+        .content{
+            width: 100%;
+            height: 2000px;
+            position: relative;
+        }
+        .left_wrap{
+            width: 95%;
+            height: 600px;
+            position: absolute;
+            top: 80px;
+            left: 20px;
+        }
+
+        .right_wrap{
+            width: 95%;
+            height: 400px;
+            margin-top: 590px;
+            position: absolute;
+            top: 80px;
+            left: 20px;
+        }
+        .right_wrap input{
+            width: 90%;
+            height: 25px;
+        }
+        .right_wrap textarea{
+            width: 90%;
+            height: 150px;
+        }
+        .right_button{
+            width: 90%;
+        }
+        .rg_button{
+            width: 90%;
+        }
+}
+
+
+
+
